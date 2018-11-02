@@ -12,7 +12,7 @@ app.get('/', async(request, response) => {
     try {
         const content = await axios({
             method: 'GET',
-            url: 'https://como-fazer-1a64d.firebaseio.com/teste.json'
+            url: ''
         })
 
         console.log(content.data)
