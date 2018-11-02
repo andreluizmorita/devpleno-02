@@ -12,16 +12,7 @@ app.get('/', async(request, response) => {
     try {
         const content = await axios({
             method: 'GET',
-            url: 'https://como-fazer-1a64d.firebaseio.com/teste.json',
-            socketPath: 'proxy',
-            proxy: {
-                host: '10.0.16.62',
-                port: 3128,
-                auth: {
-                    username: 'andre.morita',
-                    password: '3b9ac9ff!*outubro',
-                },
-            },
+            url: 'https://como-fazer-1a64d.firebaseio.com/teste.json'
         })
 
         console.log(content.data)
